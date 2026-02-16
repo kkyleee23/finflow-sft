@@ -35,8 +35,8 @@ Time periods:
   - Highest Amount
   - Lowest Amount
 
-### Info Card
-Shows the info of my web application.
+### Dark Mode
+Switch between light and dark themes, preference is saved automatically.
 
 ### Data Persistence
 All data is stored in your browser's localStorage.
