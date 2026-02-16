@@ -1,0 +1,45 @@
+.info-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+.info-modal {
+  background: var(--cream);
+  color: var(--charcoal);
+  padding: 1.5rem;
+  width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+  position: relative;
+}
+
+.info-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  background: transparent;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.info-modal h3 {
+  margin-bottom: 0.25rem;
+}
+
+.info-modal p {
+  font-size: 0.95rem;
+  color: var(--warm-gray);
+  margin-bottom: 0.75rem;
+}
+
+.info-section {
+  margin-top: 0.5rem;
+}
+
+.info-section strong { display:block; margin-bottom: 0.25rem; }

@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --charcoal: #1a1a1a;
+  --text: var(--charcoal);
+  --dark-yellow: #e6b75a;
+  --slate: #2d2d2d;
+  --warm-gray: #a8a8a8;
+  --cream: #f9f7f4;
+  --accent-green: #2d5f3f;
+  --accent-red: #8b3a3a;
+  --accent-amber: #b87333;
+  --border: #e0ddd8;
+}
+
+[data-theme="dark"] {
+  --charcoal: #f9f7f4;
+  --text: var(--dark-yellow);
+  --slate: #e0ddd8;
+  --warm-gray: #888888;
+  --cream: #1a1a1a;
+  --accent-green: #4a9d5f;
+  --accent-red: #d96459;
+  --accent-amber: #e89b5f;
+  --border: #2d2d2d;
+}
+
+/* Apply dark-mode text color (dark yellow) to common button-like controls, including footer buttons */
+[data-theme="dark"] .control-btn,
+[data-theme="dark"] .sort-btn,
+[data-theme="dark"] .filter-btn,
+[data-theme="dark"] .period-btn,
+[data-theme="dark"] .theme-toggle,
+[data-theme="dark"] .type-btn,
+[data-theme="dark"] .submit-btn,
+[data-theme="dark"] footer button {
+  color: var(--text);
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* scroll */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--warm-gray);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--slate);
+}

@@ -1,0 +1,57 @@
+.chart-section {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  margin-bottom: 3rem;
+  transition: background 0.3s ease;
+}
+
+[data-theme="dark"] .chart-section {
+  background: var(--slate);
+}
+
+.section-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.custom-tooltip {
+  background: var(--charcoal);
+  color: var(--cream);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="dark"] .custom-tooltip {
+  background: var(--cream);
+  color: var(--text);
+}
+
+.tooltip-income {
+  color: #7bc96f;
+  margin-bottom: 0.25rem;
+}
+
+[data-theme="dark"] .tooltip-income {
+  color: var(--accent-green);
+}
+
+.tooltip-expense {
+  color: #ff7b7b;
+}
+
+[data-theme="dark"] .tooltip-expense {
+  color: var(--accent-red);
+}
+
+@media (max-width: 768px) {
+  .chart-section {
+    padding: 1.5rem 1rem;
+    margin-bottom: 2.5rem;
+    min-height: 340px;
+  }
+}

@@ -1,0 +1,123 @@
+.add-section {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  transition: background 0.3s ease;
+}
+
+[data-theme="dark"] .add-section {
+  background: var(--slate);
+}
+
+.type-toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.type-btn {
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  background: var(--cream);
+  cursor: pointer;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  color: var(--text);
+}
+
+[data-theme="dark"] .type-btn {
+  background: var(--charcoal);
+}
+
+.type-btn:hover {
+  border-color: var(--charcoal);
+}
+
+.type-btn.active.income {
+  background: var(--accent-green);
+  color: var(--cream);
+  border-color: var(--accent-green);
+}
+
+.type-btn.active.expense {
+  background: var(--accent-red);
+  color: var(--cream);
+  border-color: var(--accent-red);
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--warm-gray);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  background: var(--cream);
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, background 0.3s ease;
+  color: var(--text);
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--charcoal);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background: var(--charcoal);
+  color: var(--cream);
+  border: none;
+  cursor: pointer;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: var(--slate);
+}
+
+[data-theme="dark"] .submit-btn {
+  background: var(--accent-green);
+}
+
+[data-theme="dark"] .type-btn.active.income,
+[data-theme="dark"] .type-btn.active.expense,
+[data-theme="dark"] .submit-btn {
+  color: var(--text);
+}
+
+[data-theme="dark"] .submit-btn:hover {
+  background: var(--accent-green);
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .add-section {
+    padding: 1.5rem;
+  }
+}
